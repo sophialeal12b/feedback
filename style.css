@@ -6,7 +6,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
-:root{
+:root {
     --dark-blue: #262e38;
     --light-grey: #969FAD;
     --medium-grey: #7c8798;
@@ -16,7 +16,7 @@
     --black-gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
 }
 
-body{
+body {
     background-color: var(--very-dark-blue);
     height: 100svh;
 
@@ -25,14 +25,14 @@ body{
     align-items: center;
 }
 
-.card{
+.card {
      background: var(--black-gradient);
      max-width: 412px;
      padding: 32px;
      border-radius: 30px;
 }
 
-.estrela{
+.estrela {
 background-color: var(--dark-blue);
 width: 48px;
 height: 48px;
@@ -46,26 +46,26 @@ border-radius: 50%;
 margin-bottom: 30px;
 }
 
-.card h1{
+.card h1 {
     color: var(--white);
     font-size: 28px;
     margin-bottom: 15px;
 }
 
-.card p{
+.card p {
     color: var(--light-grey);
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 24px;
 }
 
-.botoes{
+.botoes {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px ;
+    margin-bottom: 32px; 
 }
 
-.botoes button{
+.botoes button {
     width: 51px;
     height: 51px;
     font-size: 16px;
@@ -79,18 +79,19 @@ margin-bottom: 30px;
     transition: all ease-in-out 0.3s;
 }
 
-.botoes button:hover{
+.botoes button:hover {
     color: var(--white);
     background-color: var(--orange);
     cursor: pointer;
 }
 
-.botoes button:focus{
+.botoes button:focus {
     color: var(--white);
     background-color: var(--light-grey);
 }
 
-.card > button{
+.card > a{
+    display: block;
     width: 100%;
     padding: 13px;
     background-color: var(--orange);
@@ -102,11 +103,13 @@ margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--white);
+    text-align: center;
+    text-decoration: none;
 
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3;
 }
 
-.card > button:hover {
+.card > a:hover {
     color: var(--orange);
     background-color: var(--white);
     cursor: pointer;
